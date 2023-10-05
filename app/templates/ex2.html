@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+        <script type="module">import * as library from './static/__target__/library.js'; window.library = library;</script>
+    </head>
+    <body>
+        <h1>Welcome to Mickey Mouse Clubhouse!</h1>
+        <p>
+        	In Mickey Mouse Clubhouse you will enter some random number and sort them XD
+        </p>
+        <p>
+        	<div id="generate">Enter a sequence of numbers separated by a comma (","):</div>
+            <input type="text" id="numbers" name = "numbers" placeholder="Enter numbers separated by commas like this: 3, 6, 1, 4, 8, 7" value = "" size = "60" style = "color: grey">
+        </p>
+        <p>
+        	<div id="mickey" style = "color: grey">uh ha!</div>
+            <div id="sorted">...</div>
+        	<button onclick="library.sortnumber2()">Sort</button>
+        </p>
+        <br><a href="index">Home</a>
+
+    </body>
+</html>
